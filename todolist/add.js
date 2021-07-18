@@ -14,10 +14,25 @@ button.addEventListener('click',()=>{
     // ul_tag.appendChild(delete_button_tag);
     // ul_tag.classList.add('listElem');
     // list.appendChild(ul_tag);
+    if(!input.value){
+        return;
+    }
+
     new list_item();
 
 
 });
+
+window.addEventListener('keydown',(e)=>{
+    if(!input.value){
+        return;
+    }
+
+    if(e.keyCode===13){
+        new list_item();
+    }
+
+})
 
 // delete_button.addEventListener('click',(e)=>{
 //     console.log(e.target);
@@ -41,7 +56,7 @@ list_item.prototype={
     init:  function(){
         const self=this;
         const delete_button=document.createElement('button');
-        delete_button.innerHTML='삭제';
+        delete_button.innerHTML='<p class="sakje">삭제</p>';
         delete_button.classList.add('delete-button');
         this.mainElem.appendChild(delete_button);
 

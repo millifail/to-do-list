@@ -58,6 +58,9 @@ h1 {
 
 .input-button {
   font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .listElem {
@@ -73,4 +76,14 @@ h1 {
 .delete-button {
   position: absolute;
   right: 2%;
+  font-size: 22px;
+  padding: 2px;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+.sakje {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
