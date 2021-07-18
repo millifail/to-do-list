@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap");
+
+body {
+  font-family: "Nanum Brush Script", cursive, sans-serif;
+  box-sizing: border-box;
+}
+input,
+button {
+  font-family: "Nanum Brush Script", cursive, sans-serif;
+}
+
+.screen {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+}
+
+.todo-list {
+  position: absolute;
+  top: 10%;
+}
+
+h1 {
+  font-size: 3rem;
+}
+.inputElem {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+#input {
+  width: 50vw;
+  height: 24px;
+  border: 1px solid #000;
+  background-color: #f8f8f8;
+  border-radius: 4px;
+  font-size: 25px;
+  margin-right: 5px;
+}
+
+.input-button,
+.delete-button {
+  height: 29px;
+
+  border: 1px solid #000;
+  background-color: rgba(255, 255, 255, 0.7);
+  transition: 0.5s;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.input-button:hover,
+.delte-button:hover {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.input-button {
+  font-size: 20px;
+}
+
+.listElem {
+  position: relative;
+  font-size: 1.6rem;
+  width: 55vw;
+  padding: 10px;
+  border: 1px solid #000;
+  background-color: #f8f8f8;
+  border-radius: 4px;
+  margin-bottom: 5px;
+}
+.delete-button {
+  position: absolute;
+  right: 2%;
+}
