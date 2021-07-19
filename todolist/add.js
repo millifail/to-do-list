@@ -61,7 +61,7 @@ list_item.prototype={
         this.mainElem.appendChild(delete_button);
 
         delete_button.addEventListener('click',(e)=>{
-            e.target.parentNode.remove();
+            e.currentTarget.parentNode.remove();
 
         })
 
